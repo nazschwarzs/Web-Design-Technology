@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMEPC - Register</title>
+    <link rel="icon" href="image/jata.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+
+<body background="image/background.jpg">
+    <!--Header-->
+    <div class="header">
+        <img class="KPT" src="image/KPT.png">
+        <h1>NATIONAL MICRO ENTERPRISE PITCHING COMPETITIOM(NMEPC)2024</h1>
+    </div>
+    <!--Navigation-->
+    <div class="">
+        <nav class="nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="tentative.html">Tentative</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+                <div class="dropbtn">Account
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Content-->
+    <div class="content">
+        <form>
+            <fieldset>
+                <h1>
+                    <legend style="text-align: center;size: 20px;">User Register</legend>
+                </h1>
+                <table>
+                    <tr>
+                        <td><label for="name">Name :</label></td>
+                        <td><input type="text" name="name" placeholder="*Enter Your Name" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="poly">Institution : </label></td>
+                        <td>
+                            <select for="poly" id="poly">
+                                <option value="PUO">Politeknik Ungku Omar</option>
+                                <option value="POLISAS">Politeknik Sultan Haji Ahmad Shah</option>
+                                <option value="POLIMAS">Politeknik Sultan Abdul Halim Muadzam Shah</option>
+                                <option value="PKB">Politeknik Kota Bharu</option>
+                                <option value="PKS">Politeknik Kuching Sarawak</option>
+                                <option value="PPD">Politeknik Port Dickson</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="employee">Category : </label></td>
+                        <td>
+                            <select for="employee" id="employee">
+                                <option value="lecturer">Lecturer</option>
+                                <option value="student">Student</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="teamleadername">Team Leader Name : </label></td>
+                        <td><input type="text" name="teamleadername" id="teamleadername"
+                                placeholder="*Enter Team Leader Name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="icnumber">IC Number : </label></td>
+                        <td><input type="text" name="icnumber" id="icnumber" placeholder="*######-##-####"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label style="display:inline-block ; margin-right: 10px;" for="gender">Gender : </label>
+                        </td>
+                        <td><input type="radio" name="gender" id="gender">Male
+                            <input type="radio" name="gender" id="gender"> Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="race">Race : </label></td>
+                        <td>
+                            <select for="race" id="race">
+                                <option value="Malay">Malay</option>
+                                <option value="Chinese">Chinese</option>
+                                <option value="Indian">Indian</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone Number : </label></td>
+                        <td><input type="tel" name="phone" id="phone" placeholder="*###-###-####" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Upload Payment Evidence : </label></td>
+                        <td><input type="file" id="myfile" name="filename"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="coachname">Coach's Name : </label></td>
+                        <td><input type="text" name="coachname" id="coachname" placeholder="*Enter Coach's Name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email Address : </label></td>
+                        <td><input type="email" name="email" id="email" placeholder="*Enter Your Email Address"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="summary">Innovation Summary : </label></td>
+                        <td><textarea name="summary" cols="25" rows="3"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password">Password : </label></td>
+                        <td><input type="password" name="psw" id="psw" placeholder="*Enter Password" required><br>
+                            <input type="password" name="psw" id="psw" placeholder="*Re-enter Password" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="jarak"><input class="buttonReg1" type="reset" value="Reset"></td>
+                        <p></p>
+                        <td> <input class="buttonReg2" type="submit" value="Submit">
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">Copyright © NMEPC 2024</div>
+</body>
+
+</html>
