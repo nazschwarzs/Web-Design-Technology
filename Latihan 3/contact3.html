@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact3.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="icon" href="image/logoArt.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="image/logoArt.png" height="100" width="100" alt="Artistry Gallery Logo">
+            <h1>ARTISTRY GALLERY</h1>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <center>
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="gallery3.html">Gallery</a>
+                <a class="active" href="contact3.html">Contact</a>
+            </div>
+        </nav>
+    </center>
+    <!-- Content -->
+    <center>
+        <div>
+            <div>
+                <h2>Contact Us</h2>
+                <div class="content-center">
+                    <form class="card" id="contactForm">
+
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="gender">Gender:</label><br>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female<br><br>
+
+                        <label for="date">Date:</label><br>
+                        <input type="text" id="date" name="date" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" required></textarea><br><br>
+
+                        <label for="upload">Upload File:</label><br><br>
+                        <input type="file" id="myFile" name="filename"><br><br><br>
+
+                        <label for="inquiry">Type of Inquiry:</label><br>
+                        <select id="inquiry" name="inquiry" required>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="support">Support</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
+
+                        <button type="submit" onclick="retrieveData()">Submit</button><br><br>
+
+                        <button type="button" onclick="retrieveData()">Display</button>
+                    </form>
+
+                    <div id="output"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </center>
+    <!-- Footer -->
+    <br>
+    <footer>
+        <div>
+            &copy; 2024 Artistry Gallery. All Rights Reserved.
+        </div>
+    </footer>
+    <!-- Include JavaScript files at the end -->
+    <script src="js/contact3.js"></script>
+</body>
+
+</html>
