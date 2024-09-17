@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDMATH QUIZ | LSA</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <img src="image/logo.png" width="65" height="65" align="left" />
+        <img src="image/logo.png" width="65" height="65" align="right" />
+        <h1 align="middle">
+            <span>LETS SCORE A <br>Website Quiz</span>
+        </h1>
+    </div>
+
+    <nav class="nav">
+        <!--Search Bar in Navigation section-->
+        <a class="active" href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                Account
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="signup.html">Sign up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us </a>
+    </nav>
+
+    <!--Content-->
+    <p></p>
+    <form>
+        
+            <div class="Acontainer">
+                <h1>Addmath Quiz</h1>
+                <div class="quiz-container">
+                    <div class="question-container">
+                        <p>1. What is 2+2?</p>
+                        <tr>
+                            <td> <input type="radio" name="question1" value="a">a. 2<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question1" value="b">b. 4<br></td>
+                        </tr>
+                        <tr>
+                            <input type="radio" name="question1" value="c">c. 1<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question1" value="d">d. 5<br></td>
+                        </tr>
+
+                        <p>2. What is 4+2?</p>
+                        <tr>
+                            <td> <input type="radio" name="question2" value="a">a. 1<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question2" value="b">b. 5<br></td>
+                        </tr>
+                        <tr>
+                            <input type="radio" name="question2" value="c">c. 6<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question2" value="d">d. 7<br></td>
+                        </tr>
+
+                        <p>3. What is 10+2?</p>
+                        <tr>
+                            <td> <input type="radio" name="question3" value="a">a. 12<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question3" value="b">b. 20<br></td>
+                        </tr>
+                        <tr>
+                            <input type="radio" name="question3" value="c">c. 46<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question3" value="d">d. 11<br></td>
+                        </tr>
+
+                        <p>4. What is 20+2?</p>
+                        <tr>
+                            <td> <input type="radio" name="question4" value="a">a. 12<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question4" value="b">b. 30<br></td>
+                        </tr>
+                        <tr>
+                            <input type="radio" name="question4" value="c">c. 36<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question4" value="d">d. 22<br></td>
+                        </tr>
+
+                        <p>5. What is 100+10?</p>
+                        <tr>
+                            <td> <input type="radio" name="question5" value="a">a. 10<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question5" value="b">b. 1100<br></td>
+                        </tr>
+                        <tr>
+                            <input type="radio" name="question5" value="c">c. 110<br></td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="question5" value="d">d. 11<br></td>
+                        </tr>
+                    </div>
+                    <center><button class="Abtn-submit" onclick="checkAnswers()">Finished</button></center>
+                </div>
+            </div>
+    </form>
+    <div id="userAnswers"></div>
+    <p></p>
+    <!--Footer-->
+    <div class="footer">&copy;2024 Copyright LSA</div>
+    <script src="js/addmath.js"></script>
+</body>
+
+</html>

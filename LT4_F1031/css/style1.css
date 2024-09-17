@@ -1,0 +1,638 @@
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #6096B4;
+    color: white;
+    padding: 20px;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #93BFCF;
+}
+
+.nav a {
+    float: left;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: darkblue;
+    background-color: whitesmoke;
+}
+
+.nav a:active {
+    background-color: whitesmoke;
+    color: darkblue;
+}
+
+.nav .dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.nav .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.nav .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-height: 100px;
+    box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav .dropdown .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav .dropdown-content a:hover {
+    background-color: #6096B4;
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.nav .search-container {
+    float: right;
+    margin-right: 50px;
+}
+
+.nav input[type=text] {
+    margin-top: 8px;
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+}
+
+.nav button {
+    padding: 6px 10px;
+    float: right;
+    background-color: #6096B4;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    display: inline-flex;
+    position: fixed;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.headcontent {
+    padding: 10px;
+    background-color: #656461;
+    color: white;
+    text-align: center;
+}
+
+.h2 {
+    background-color: #6096B4;
+    padding: 10px;
+    color: #EEE9DA;
+    text-align: center;
+}
+
+
+.img1 {
+    background-color: #BDCDD6;
+    color-scheme: #EEE9DA;
+    padding: 20px;
+    align-content: center;
+    border: 10px solid #EEE9DA;
+}
+
+.content {
+    margin: auto;
+    padding: 50px;
+    color: #333;
+    width: 50%;
+}
+
+.custom-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #6096B4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .nav .search-container {
+        float: right;
+    }
+}
+
+.card {
+    background-color: #6096B4;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.div1 {
+    padding: 20px;
+    background-color: #BDCDD6;
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 200px;
+    border: 10px;
+    border-color: #93BFCF;
+}
+
+table tr {
+    font-weight: bold;
+    color: #EEE9DA;
+    background-color: #656461;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table td {
+    color: black;
+    background-color: #EEE9DA;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Quiz--------------------------------------------------------------*/
+.quiz div {
+    background-color: #93BFCF;
+    padding: 20px;
+}
+
+.quiz h1 {
+    text-align: center;
+    padding: 10px;
+    background-color: #656461;
+    color: white;
+}
+
+.quiz table {
+    border: 10px solid #93BFCF;
+}
+
+.quiz th {
+    background-color: #656461;
+    color: white;
+}
+
+.quiz td,
+button {
+    background-color: #EEE9DA;
+}
+
+/*Login---------------------------------------------------------------------*/
+
+
+.login h1 {
+    padding: 10px;
+    background-color: #656461;
+    color: white;
+}
+
+.login form {
+    background-color: #6096B4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.login table {
+    border: 10px;
+    background-color: #93BFCF;
+    border-color: #EEE9DA;
+
+}
+
+.login th {
+    background-color: #656461;
+}
+
+.login p {
+    color: white;
+}
+
+#loginbutton1 {
+    color: black;
+    width: auto;
+    padding: 5px 20px;
+    background-color: khaki;
+}
+
+#loginbutton1:hover {
+    background-color: darkkhaki;
+}
+
+.loginbutton2 {
+    width: auto;
+    padding: 5px 65px;
+    background-color: darkkhaki;
+}
+
+.loginbutton2:hover{
+    background-color: khaki;
+}
+
+.loginlabel {
+    padding: 10px 20px;
+}
+
+.loginsignup {
+    background-color: antiquewhite;
+    font-style: italic;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Slide*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mySlides {
+    display: none;
+
+}
+
+img {
+    vertical-align: middle;
+
+}
+
+/* Slideshow container*/
+.slideshow1 {
+    background-color: #BDCDD6;
+    color-scheme: #EEE9DA;
+    padding: 20px;
+    align-content: center;
+    border: 10px solid #EEE9DA;
+}
+
+.slideshow-container {
+
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+/*Number text (1/3 etc)*/
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8pc 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators*/
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading Animation*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*On smaller screens, decrease text size*/
+@media only screen and(max-width:300px) {
+    .text {
+        font-size: 11px;
+    }
+}
+
+/*Quiz Addmath-------------------------------------------------------*/
+.Acontainer {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #93BFCF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.Aquestion {
+    margin-bottom: 20px;
+}
+
+.Aoptions {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Aoptions li {
+    margin-bottom: 10px;
+}
+
+.Aoptions label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 3px solid #ccc;
+    background-color: #bbb;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.Aoptions label:hover {
+    background-color: #f0f0f0;
+}
+
+.Aoptions input[type="radio"] {
+    display: none;
+}
+
+.Abtn-submit {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: darkkhaki;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Abtn-submit:hover {
+    background-color: khaki;
+}
+
+.Abtn-reset{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: darkkhaki;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Abtn-reset:hover{
+    background-color: khaki;
+}
+
+/*sign up-----------------------------------------------------------*/
+
+.signup div{
+    color:white;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+    
+}
+
+input[type=username],input[type=email],input[type=password] {
+    
+    width: 300px ;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=date] {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit],
+[type=reset] {
+    width: 45%;
+    background-color: darkkhaki;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    resize: vertical;
+    cursor: pointer;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+#message{
+    display: none;
+    background: #f1f1f1;
+    padding: 20px;
+    background-color: #656461;
+}
+
+#message p{
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.password-checker{
+    border: 1px solid #007bff;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 50px;
+    text-shadow: 1px 1px 2px #007bff;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* add green text color and checkmark when the requirements are correct */
+.valid{
+    color: green;
+}
+
+.invalid{
+    color: red;
+}
+
+.valid::before{
+    position: relative;
+    left: -35px;
+    content: "\2713";
+}
+
+.invalid::before{
+    position: relative;
+    left: -35px;
+    content: "\2716";
+}
+
+/*about us ----------------------------------------------------------*/
+
+.aboutcontent {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.aboutcard {
+    background-color: #fff; /* White card background */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: 0.3s; /* Add transition effect */
+    margin-bottom: 20px; /* Add some space between cards */
+    padding: 20px; /* Add padding */
+}
+
+.aboutcard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Button style */
+.aboutbutton {
+    background-color: darkkhaki; /* Light blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.aboutbutton:hover {
+    background-color: khaki; /* Medium blue on hover */
+}
+
+.aboutbutton a {
+    color: white;
+    text-decoration: none;
+}
+
+.headcontentAbout {
+    padding: 10px;
+    background-color: #6096B4;
+    color: white;
+    text-align: center;
+}
+
+    .aboutcard iframe {
+        width: 100%;
+        height: 400px; 
+        border: none; 
+    }
+
+.img1{
+    width: 300px;
+    height: 300px;
+}
+
+.error-message {
+    color: orange;
+    display: block;
+    margin-top: 5px; /* Adjust this value as needed */
+  }

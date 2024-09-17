@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME | LSA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style1.css" />
+</head>
+<!--Colour
+    #6096B4
+    #93BFCF
+    #BDCDD6
+    #EEE9DA
+-->
+
+<body>
+  <script type="text/javascript">alert('Welcome to Lets Score A Website Quiz')</script>
+  <!--Header-->
+  <div class="header">
+    <img src="image/logo.png" width="65" height="65" align="left" />
+    <img src="image/logo.png" width="65" height="65" align="right" />
+    <h1 align="middle">
+      <span>LETS SCORE A <br>Website Quiz</span>
+    </h1>
+  </div>
+
+  <nav class="nav">
+    <!--Search Bar in Navigation section-->
+    <a class="active" href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <div class="dropdown">
+      <div class="dropbtn">
+
+        Account
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="signup.html">Sign up</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us </a>
+  </nav>
+
+  <marquee>"A person who never made a mistake never tried anything new." – Albert
+    Einstein</marquee>
+
+  <!--add form in content section-->
+  <div class="headcontent">
+    <h1>Lets take a quiz about this subjects</h1>
+  </div>
+  <p></p>
+  <div class="slideshow1">
+  <div class="slideshow-container" >
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="image/exam1.png"style="width: 100%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="image/student.avif" style="width: 100%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="image/student1.webp" style="width: 100%">
+        <div class="text"></div>
+    </div>
+  </div>
+
+<br>
+<div style="text-align: center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); //Change image every 2 seconds
+    }
+</script>
+
+  <center>
+    <div class="h2">
+      <h2>SUBJECT THAT WE OFFERS :</h2>
+    </div>
+
+    <div class="div1">
+      <table>
+        <tr>
+          <th>SUBJECT</th>
+          <th>TUTORIAL</th>
+        </tr>
+        <!--Subject 1-->
+        <tr>
+          <td>ADD MATH</td>
+          <td>
+            <ul>
+
+              <center><iframe width="500" height="255"
+                  src="https://www.youtube.com/embed/GxtiWc0a2LI?si=Rdjoj3OHowJCnuli" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></center>
+
+            </ul>
+          </td>
+        </tr>
+        <!--Subject 2-->
+        <tr>
+          <td>PHYSICS</td>
+          <td>
+            <ul>
+
+              <center><iframe width="500" height="255" src="https://www.youtube.com/embed/S1jIaD7wuvY"
+                  title="Membongkar Fizik Sepakan Lagenda Faiz Subri!" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe></center>
+
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+
+  <!--footer-->
+  <div class="footer">&copy;2024 Copyright LSA</div>
+</body>
+
+</html>

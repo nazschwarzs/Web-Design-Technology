@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSICS QUIZ | LSA</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<!--Answer
+1. c.mass
+2. d. Newton (N)
+3. a. 9.8 m/s^2
+4. d. Magnetic force
+5. b. Gravitational force
+-->
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <img src="image/logo.png" width="65" height="65" align="left" />
+        <img src="image/logo.png" width="65" height="65" align="right" />
+        <h1 align="middle">
+            <span>LETS SCORE A <br>Website Quiz</span>
+        </h1>
+    </div>
+
+    <nav class="nav">
+        <!--Search Bar in Navigation section-->
+        <a class="active" href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                Account
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="signup.html">Sign up</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us </a>
+    </nav>
+
+    <!--Content-->
+    <p></p>
+    <form>
+
+        <div class="Acontainer">
+            <h1>Physics Quiz</h1>
+            <div class="quiz-container">
+                <div class="question-container">
+                    <img class="img1" src="image/physics2.jpg">
+                    <p> 1.Which of the following is an example of a scalar quantity?</p>
+                    <tr>
+                        <td> <input type="radio" name="question1" value="a">a. Velocity<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question1" value="b">b. Acceleration<br></td>
+                    </tr>
+                    <tr>
+                        <input type="radio" name="question1" value="c">c. Mass<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question1" value="d">d. Force<br></td>
+                    </tr>
+
+                    <p> 2.What is the SI unit of force?</p>
+                    <tr>
+                        <td> <input type="radio" name="question2" value="a">a. Watt (W)<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question2" value="b">b. Joule (J)<br></td>
+                    </tr>
+                    <tr>
+                        <input type="radio" name="question2" value="c">c. Kilogram (kg)<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question2" value="d">d. Newton (N)<br></td>
+                    </tr>
+
+                    <p>3. The acceleration due to gravity on the surface of the Earth is approximately:</p>
+                    <tr>
+                        <td> <input type="radio" name="question3" value="a">a. 9.8 m/s^2<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question3" value="b">b. 6.8 m/s^2<br></td>
+                    </tr>
+                    <tr>
+                        <input type="radio" name="question3" value="c">c. 5.8 m/s^2<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question3" value="d">d. 10.8 m/s^2<br></td>
+                    </tr>
+                    <br>
+                    <img class="img1" src="image/1.jpg">
+                    <p>4. Which of the following is an example of a non-contact force?</p>
+                    <tr>
+                        <td> <input type="radio" name="question4" value="a">a. Frictional force<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question4" value="b">b. Tension force<br></td>
+                    </tr>
+                    <tr>
+                        <input type="radio" name="question4" value="c">c. Gravitational force<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question4" value="d">d. Magnetic force<br></td>
+                    </tr>
+
+                    <p>5. Which of the following is an example of a conservative force?</p>
+                    <tr>
+                        <td> <input type="radio" name="question5" value="a">a. Frictional force<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question5" value="b">b. Gravitational force<br></td>
+                    </tr>
+                    <tr>
+                        <input type="radio" name="question5" value="c">c. Magnetic force<br></td>
+                    </tr>
+                    <tr>
+                        <td> <input type="radio" name="question5" value="d">d. Normal force<br></td>
+                    </tr>
+                </div>
+                <center><button class="Abtn-submit" onclick="checkAnswers2()">Finished</button></center>
+            </div>
+        </div>
+    </form>
+
+    <p></p>
+    <!--Footer-->
+    <div class="footer">&copy;2024 Copyright LSA</div>
+    <script src="js/physics.js"></script>
+</body>
+
+</html>

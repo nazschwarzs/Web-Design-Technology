@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN UP | LSA</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  <!--Header-->
+  <div class="header">
+    <img src="image/logo.png" width="65" height="65" align="left" />
+    <img src="image/logo.png" width="65" height="65" align="right" />
+    <h1 align="middle">
+      <span>LETS SCORE A <br>Website Quiz</span>
+    </h1>
+  </div>
+
+  <nav class="nav">
+    <!--Search Bar in Navigation section-->
+    <a class="active" href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <div class="dropdown">
+      <div class="dropbtn">
+        Account
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="signup.html">Sign up</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+    <a href="about.html">About us</a>
+    <a href="contact.html">Contact us </a>
+  </nav>
+
+  <!--Content Section-->
+  <div class="login h1">
+    <h1>SIGN UP ACCOUNT</h1>
+  </div>
+
+  <center>
+    <div class="signup div">
+      <div class="login form">
+        <form action="">
+          <label for="username">Enter Username:</label>
+          <input type="username" id="uname" name="uname" placeholder="enter your username" required>
+          <p></p>
+          <label for="email">Enter Email:</label>
+          <input type="email" id="email" name="email" placeholder="enter your email" required>
+          <span id="email-error" class="error-message"></span>
+          <p></p>
+          <label for="birthday">Enter Birthday:</label>
+          <input type="date" id="birthday" name="birthday" required>
+          <p></p>
+          <label for="pwd">Enter Password:</label>
+          <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            placeholder="enter password"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+          <br> 
+          <br> 
+          <div id="message">
+            <h3>Password must contain the following: </h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital(uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b> </p>
+          </div>
+          <br>
+          <input type="password" id="pwd-confirm" name="pwd-confirm" placeholder="re-enter password">
+          <br>
+          <br>
+          <button class="loginbutton2" type="submit" id="signup-btn">Sign Up</button>
+
+          <br>
+          <br>
+          <label class="signuplabel"><input type="checkbox" checked="checked" name="info">I wish to receive
+            information,offers,<br>recommendation, and updates from LSA</label>
+
+        </form>
+      </div>
+    </div>
+  </center>
+
+  <br>
+  <br>
+
+  <!--Footer-->
+  <div class="footer">&copy;2024 Copyright LSA</div>
+
+  <script src="js/signup.js" defer></script>
+</body>
+</html>

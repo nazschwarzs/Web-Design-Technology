@@ -1,0 +1,16 @@
+Homo:
+-Slide show(activities)
+-Name and photo top JTMK Top management
+
+About: 
+-Intro about program
+-synopsis program
+
+-course
+-job prospect
+
+Activity:
+activities / program (FB POLIMAS)
+
+Contact : 
+-Contact Form : name, email, phone, gender, comment

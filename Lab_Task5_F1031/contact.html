@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | JTMK</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <img class="logo1" src="image/kpt.png" alt="KPT Logo">
+        <h1>Welcome to JTMK Polimas Website</h1>
+        <img class="logo2" src="image/logoPolimas.png" alt="Polimas Logo">
+        
+    </header>
+    <!--Navigation-->
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="activity.html">Activity</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!--Content-->
+    <main class="content">
+        <h1 class="title">Contact</h1>
+        <div class="form-container">
+            <form class="card" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    <span id="email-error" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Phone: </label>
+                    <input type="tel" name="tel" id="tel" placeholder="Enter your phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender: </label>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment: </label>
+                    <textarea name="comment" id="comment" placeholder="Enter your comment" required></textarea>
+                </div>
+                <button id="contact-btn" class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>©2024 CC Corp.</p>
+    </footer>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
