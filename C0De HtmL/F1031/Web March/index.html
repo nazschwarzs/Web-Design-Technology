@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cypark Company</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header"><img class="logo" src="image/CyparkLogo.jpg">
+        <h1>Welcome to Cypark Website</h1>
+    </div>
+
+    <!--Navigation-->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="info.html">Service & Product </a>
+        <a href="Form.html">Form</a>
+    </div>
+
+    <!--Add card in contact-->
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>CYPARK COMPANY</h2>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/cable.jfif" style="width: 100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/cenang.jfif" style="width: 100%">
+                        <div class="text"></div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="image/bg2.jpg" style="width: 100%">
+                        <div class="text"></div>
+                    </div>
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) { slideIndex = 1 }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace("active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        setTimeout(showSlides, 2000); //Change image every 2 seconds
+                    }
+                </script>
+                <p>Cypark Resource Berhad is a public listed company on the Main Board of</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin
+                    pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat.
+                    Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam
+                    erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus.
+                    Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus. In adipiscing
+                    ultrices tellus, in suscipit massa vehicula eu.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Company Photos</h2>
+
+        <div class="row">
+            <div class="column">
+                <img src="image/cypark1.jpg" style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="image/cypark2.jpg" style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="image/cypark3.jpg" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

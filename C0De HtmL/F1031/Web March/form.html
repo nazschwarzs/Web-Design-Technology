@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form | Cypark Company</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!--Header-->
+  <div class="header">
+    <img class="logo" src="image/CyparkLogo.jpg" />
+    <h1>Welcome to Cypark Website</h1>
+  </div>
+
+  <!--Navigation-->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="info.html">Service & Product </a>
+    <a href="Form.html">Form</a>
+  </div>
+
+  <!--Content-->
+  <div class="card">
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="fname" name="fname" placeholder="your name" />
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" placeholder="your email" />
+
+      <br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="gendermale" name="gender" />Male
+      <input type="radio" id="genderfemale" name="gender" />Female
+      <br />
+
+      <label for="address">Address:</label>
+      <textarea cols="10" row="3"></textarea>
+
+      <label for="state">State:</label>
+      <select name="state" id="state">
+        <option value="Johor">Johor</option>
+        <option value="Kedah">Kedah</option>
+        <option value="Kelantan">Kelantan</option>
+        <option value="Melaka">Melaka</option>
+        <option value="Selangor">Selangor</option>
+      </select>
+
+      <input type="submit" id="submit" name="submit" value="submit" />
+      <input type="reset" id="reset" name="reset" value="reset" />
+
+      <label></label>
+    </form>
+  </div>
+</body>
+
+</html>

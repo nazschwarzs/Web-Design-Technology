@@ -1,0 +1,22 @@
+
+@media print{
+    /*Hide the nav menu when print*/
+    nav, marquee{
+        display:none;
+
+    }
+    #myfooter{
+        display:none;
+    }
+    /* Adjust the sixze and spacing of text for print*/
+    body, h1,h2,h3{
+        font-size: 12pt;
+        line-height: 1.5;
+        text-align: justify;
+        /* set the margins and page size for print*/ 
+        @page{
+            margin: lin;
+            size: letter;
+        }
+    }
+}

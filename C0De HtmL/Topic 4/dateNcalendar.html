@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        #datepicker{
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Date Picker Integration</h1>
+    <input type="text" id="datepicker" placeholder="select a date">
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            var datepicker = document.getElementById('datepicker');
+
+            flatpickr(datepicker, {
+                dateFormat: 'Y-m-d',
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Mouse down N up</title>
+    <script>
+        function myColor(elmt, clr) {
+            elmt.style.color = clr;
+        }
+    </script>
+</head>
+
+<body>
+
+    <p onmousedown="myColor(this,'red')" onmouseup="myColor(this,'green')">Click the text to change the color.
+        A function, with parameter, is triggered when the mouse button is pressed down, and again, with other parameters,
+        when the mouse button is released.</p>
+
+</body>
+
+</html>

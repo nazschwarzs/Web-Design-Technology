@@ -1,0 +1,25 @@
+#demo{
+    background-color: skyblue;
+    border: 4px solid purple;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 50px;
+    color: black;
+    width: 50%;
+    box-shadow: 10px 5px 5px 10px grey; 
+    margin: 15% auto; 
+}
+
+#demo1{
+    background-color: skyblue;
+    border: 4px solid purple;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 50px;
+    color: black;
+    width: 50%;
+    box-shadow: 10px 5px 5px 10px grey; 
+    margin: 15% auto; 
+}

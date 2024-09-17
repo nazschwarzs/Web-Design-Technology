@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Food Online</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 15%;
+    }
+
+    .cart {
+      background-color: #ddd;
+      box-shadow: 2px 2px 2px 2px #ddd;
+      border-radius: 4px;
+
+      display: flex;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    input[type="number"],
+    select {
+      width: 150px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-left: 50px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #orderSummary {
+      margin-top: 5%;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Order Food Online</h1>
+  <div class="cart">
+    <label for="food">Select Food:</label>
+    <select id="food">
+      <option value=""></option>
+      <option value="pizza">Pizza</option>
+      <option value="burger">Burger</option>
+      <option value="spaghetti">Spaghetti</option>
+    </select><br /><br />
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" min="1" value="" /><br /><br />
+
+    <button onclick="displayOrder()">Place Order</button><br /><br />
+
+    <div id="orderSummary"></div>
+
+    <script>
+      function displayOrder() {
+        let food = document.getElementById("food").value;
+        let quantity = document.getElementById("quantity").value;
+
+        let orderSummary = document.getElementById("orderSummary");
+
+        if (food && quantity && quantity.trim() !== "") {
+          orderSummary.innerHTML = "You ordered: " + quantity + "" + food + "(s).";
+        } else {
+          orderSummary.innerHTML = "Please select food and quantity.";
+        }
+      }
+
+      function displayOrder() {
+        var food = document.getElementById("food").value;
+        var quantity = parseInt(document.getElementById("quantity").value);
+
+        var orderSummary = document.getElementById("orderSummary");
+
+        if (food && quantity && !isNaN(quantity) && quantity > 0) {
+          var price = calculatePrice(food);
+          orderSummary.innerHTML = "You ordered  " + quantity + " " + food + "(s).<br>";
+          orderSummary.innerHTML += "Price per " + food + " Rm " + price.toFixed(2) + "<br>";
+        } else {
+          orderSummary.innerHTML = "Please select food and specify a valid quantity"
+        }
+      }
+
+      function calculatePrice(food) {
+        //Price calculate logic based on food type
+        switch (food) {
+          case "pizza":
+            return 10.99;
+          case "burger":
+            return 5.99;
+          case "spaghetti":
+            return 12.99;
+          default:
+            return 0;
+        }
+      }
+    </script>
+  </div>
+</body>
+
+</html>

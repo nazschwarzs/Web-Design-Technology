@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List & Table</title>
+
+    <link rel="stylesheet" media="print" href="print.css"/>
+
+    <style>@media print{
+        /*Hide the nav menu when print*/
+        nav, marquee ,button{
+            display:none;
+    
+        }
+        #myfooter{
+            display:none;
+        }
+        /* Adjust the sixze and spacing of text for print*/
+        body,h2,h3{
+            background-color:rgb(183, 214, 243) ;
+            font-size: 12pt;
+            line-height: 1.5;
+            text-align: justify;
+            /* set the margins and page size for print*/ 
+            @page{
+                margin: lin;
+                size: letter;
+            }
+
+            h1{
+                align-items:  center;
+            }
+        }
+    }</style>
+    
+</head>
+<body>
+    
+    <body style="background-image: Url(image/background.png); background-size: cover">
+
+        <!--Header-->
+        <div style="background-color: rgb(183, 214, 243); padding: 150 px">
+            <img src="image/Han Hyo Joo.jpg" width="60px" height="60px" align="left" styel="vertical-align:middle;" />
+            <h1 align="center">
+                <span style="
+                  color: rgb(183, 127, 207);
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',sans-serif;">
+                    "Welcome To My Website"</span><br/><span style="color: black">--Han Hyo Joo--</span>
+            </h1>
+        </div>
+    
+        <!--MENU/NAVIGATION BAR -->
+        <nav>
+            <table cellpadding="5px">
+                <tr>
+                    <td><a href="index.html">| Home |</a></td>
+                    <td><a href="about.html">| About |</a></td>
+                    <td><a href="contact.html">| Contact | </a></td>
+                    <td><a href="list&table.html">| List | </a></td>
+                </tr>
+            </table>
+        </nav>
+        <marquee style="color: dodgerblue; font-size: 24px; font-weight: bold; background-color: rgb(226, 227, 230);">Han Hyo Joo</marquee>
+
+        <h2>Example of HTML List in Table</h2>
+
+        <table border="3px" style="border-color:rgb(127,150,255);background-color: rgb(167, 214, 255);">
+            <tr>
+                <td style="background-color: rgb(61, 139, 255); color: rgb(255, 255, 255);">Name</td>
+                <td style="background-color: rgb(61, 139, 255); color: rgb(255, 255, 255);">Skills</td>
+            </tr>
+            <tr>
+        <td align="center" rowspan="2">AHMAD </td>
+        <td>
+            <!--ORANG 1-->
+            <ul style="list-style-type: square;">
+            <!--BULLET LIST-->
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: justify;">HTML stands for Hyper Text Markup Language.HTML is the standard markup language for creating Web pages.HTML describes the structure of a Web page.HTML consists of a series of elements.HTML elements tell the browser how to display the content.HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</td>
+    </tr>
+
+    <tr>
+        <!--ORANG 2-->
+        <td align="center" rowspan="2">ABU BAKAR</td>
+        <td>
+            <ul style="list-style: circle;">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="text-align: justify;">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse</td>
+    </tr>
+
+    <tr>
+        <!--ORANG 3-->
+        <td align="center" rowspan="2">AZMAN JO</td>
+        <td>
+            <ul style="list-style-type: georgian;">
+            <li>Basketball</li>
+            <li>Footbal</li>
+            <li>Tennis</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: justify;">
+            Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court), while preventing the opposing team from shooting through their own hoop
+        </td>
+    </tr>
+        </table>
+        <p align="right"><button onclick="window.print()" style="border-radius: 20px;" >Print</button></p>
+        <br>
+        <!--Footer-->
+        <div ID="myfooter" style="background-color: rgb(105,170,255);padding:10px; text-align: center;"> @copy Web2024</div>
+       
+    </body>
+</html>

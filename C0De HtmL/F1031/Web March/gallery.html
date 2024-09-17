@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Cypark Company</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Header-->
+  <div class="header">
+    <img class="logo" src="image/CyparkLogo.jpg" />
+    <h1>Welcome to Cypark Website</h1>
+  </div>
+
+  <!--Navigation-->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="info.html">Service & Product </a>
+    <a href="Form.html">Form</a>
+  </div>
+
+  <div class="row">
+    <a href=""></a>
+    <div class="card">
+      <h2>CYPARK GALLERY</h2>
+
+      <!--<h4>Add slide show in the box</h4>-->
+
+      <p>
+        Cypark Resource Berhad is a public listed company on the Main Board of Bursa Malaysia Securities Berhad since
+        2010.
+        We are Malaysia's pioneering developer and provider in integrated services, and waste management and
+        waste-to-energy.
+      </p>
+      <p>
+        Cypark's establishment is based on sustainable innovation, progress, and development in providing quality living
+        environment through top-notch professional engineering and environmentally friendly products, maintenance, and
+        services.
+        Expertise, experience, and enduring research and development efforts are the essence of our business strategy
+        and
+        transformation.
+      </p>
+    </div>
+  </div>
+  <p></p>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/cable.jfif">
+        <img src="image/cable.jfif">
+      </a>
+      <div class="desc">A transport system, typically one traveling up and down a mountain</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/cenang.jfif">
+        <img src="image/cenang.jfif">
+      </a>
+      <div class="desc">Pantai Cenang is the most popular beach on the island</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/bg2.jpg">
+        <img src="image/bg2.jpg">
+      </a>
+      <div class="desc">Gunung Raya is the highest mountain in Langkawi</div>
+    </div>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="image/helang.jpg">
+        <img src="image/helang.jpg">
+      </a>
+      <div class="desc">Dataran Lang (Dataran Helang) merupakan mercu tanda Langkawi</div>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <h2 align="center"> Cypark Slideshow</h2>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="image/cable.jfif" style="width: 100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="image/cenang.jfif" style="width: 100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="image/bg2.jpg" style="width: 100%">
+      <div class="text"></div>
+    </div>
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); //Change image every 2 seconds
+    }
+  </script>
+  <br>
+  <div class="copy">&copy;cypark company</div>
+</body>
+
+</html>

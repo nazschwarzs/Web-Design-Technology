@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Element Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="content" style="display:none;">
+        <h1>This is the hidden content!</h1>
+        <p>It will be shown when you click the button.</p>
+    </div>
+    <button id="showButton">Show Content</button>
+
+    <script>
+        $(document).ready(function(){
+            // Set up a click event listener on the button
+            $("#showButton").click(function(){
+
+                // Show the hidden content
+                //$("#content").show("slow");
+
+                // Toggle the visibility of the content
+                $("#content").toggle("slow");
+            });
+        });
+    </script>
+</body>
+</html>
